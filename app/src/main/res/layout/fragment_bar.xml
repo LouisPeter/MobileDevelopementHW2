@@ -11,10 +11,10 @@
         android:id="@+id/graphBar"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        app:gridInsetLeft="35dp"
-        app:gridInsetRight="10dp"
         app:lineLabels="left|bottom"
         app:title="Bar"
+        app:graphWidthMode="fill"
+        app:graphWidth="0dp"
         />
 
 </FrameLayout>

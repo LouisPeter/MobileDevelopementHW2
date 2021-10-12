@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.androidplot.util.PixelUtils
 import com.androidplot.xy.*
+import kotlinx.android.synthetic.main.fragment_bar.*
 import kotlinx.android.synthetic.main.fragment_line.*
 import java.text.FieldPosition
 import java.text.Format
@@ -47,9 +48,9 @@ class LineFragment : Fragment() {
             "c"
         );
         PixelUtils.init(this.context)
-        val series1Format = LineAndPointFormatter(Color.RED, Color.RED, null, null)
-        val series2Format = LineAndPointFormatter(Color.GREEN, Color.GREEN, null, null)
-        val series3Format = LineAndPointFormatter(Color.BLUE, Color.BLUE, null, null)
+        val series1Format = LineAndPointFormatter(Color.rgb(77,115, 190), Color.rgb(77,115, 190), null, null)
+        val series2Format = LineAndPointFormatter(Color.rgb(223,129, 67), Color.rgb(223,129, 67), null, null)
+        val series3Format = LineAndPointFormatter(Color.rgb(165,165, 165), Color.rgb(165,165, 165), null, null)
 
         series1Format.setInterpolationParams(
             CatmullRomInterpolator.Params(
@@ -69,6 +70,10 @@ class LineFragment : Fragment() {
                 CatmullRomInterpolator.Type.Centripetal
             )
         )
+
+        graphLine.setDomainStep(StepMode.INCREMENT_BY_VAL, 1.0)
+        graphLine.setRangeStep(StepMode.INCREMENT_BY_VAL, 1.0)
+        graphLine.setRangeBoundaries(0, 6, BoundaryMode.FIXED)
         graphLine.addSeries(series1, series1Format)
         graphLine.addSeries(series2, series2Format)
         graphLine.addSeries(series3, series3Format)

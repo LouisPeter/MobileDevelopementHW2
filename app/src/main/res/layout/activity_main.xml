@@ -13,27 +13,23 @@
         android:layout_marginStart="80dp"
         android:text="Bar"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fContainer"
-        app:layout_constraintVertical_bias="0.734" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btnLine"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
-        android:layout_marginEnd="84dp"
+        android:layout_marginEnd="80dp"
         android:text="Line"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fContainer"
-        app:layout_constraintVertical_bias="0.387" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fContainer"
         android:layout_width="409dp"
         android:layout_height="568dp"
         android:layout_weight="1"
+        app:layout_constraintBottom_toTopOf="@+id/btnLine"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.333"
         app:layout_constraintStart_toStartOf="parent"

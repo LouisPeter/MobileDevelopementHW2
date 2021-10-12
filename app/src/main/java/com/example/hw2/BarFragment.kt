@@ -62,9 +62,9 @@ class BarFragment : Fragment() {
             "c"
         );
         PixelUtils.init(this.context)
-        val series1Format = BarFormatter(Color.RED, Color.RED)
-        val series2Format = BarFormatter(Color.GREEN, Color.GREEN)
-        val series3Format = BarFormatter(Color.BLUE, Color.BLUE)
+        val series1Format = BarFormatter(Color.rgb(77,115, 190), Color.rgb(77,115, 190))
+        val series2Format = BarFormatter(Color.rgb(223,129, 67), Color.rgb(223,129, 67))
+        val series3Format = BarFormatter(Color.rgb(165,165, 165), Color.rgb(165,165, 165))
 
         series1Format.setInterpolationParams(
             CatmullRomInterpolator.Params(
