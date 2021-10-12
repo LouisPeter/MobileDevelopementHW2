@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    tools:context=".BarFragment">
+
+    <com.androidplot.xy.XYPlot
+        style="@style/APDefacto.Light"
+        android:id="@+id/graphBar"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        app:gridInsetLeft="35dp"
+        app:gridInsetRight="10dp"
+        app:lineLabels="left|bottom"
+        app:title="Bar"
+        />
+
+</FrameLayout>
