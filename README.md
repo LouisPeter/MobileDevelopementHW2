@@ -1,2 +1,2 @@
-# homework2
-CSUSM mobile developement project 
+# Mobile developement CSUSM
+Homework 2 : graph
